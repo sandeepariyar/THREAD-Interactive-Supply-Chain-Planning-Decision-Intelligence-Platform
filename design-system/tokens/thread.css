@@ -1,0 +1,108 @@
+/* THREAD DS v1 | theme contract; derived from the live prototype, with AA-oriented refinements. */
+:root, [data-thread-theme="light"] {
+  --thread-canvas: #F5F6FB;
+  --thread-surface: #FFFFFF;
+  --thread-surface-muted: #F7F8FC;
+  --thread-surface-elevated: #FFFFFF;
+  --thread-surface-accent: #F0EFFF;
+  --thread-text-primary: #18223A;
+  --thread-text-secondary: #596681;
+  --thread-text-tertiary: #616E88;
+  --thread-border: #E1E5F0;
+  --thread-border-strong: #C8D0DE;
+  --thread-accent: #5449D8;
+  --thread-accent-hover: #4035C0;
+  --thread-accent-pressed: #3026A1;
+  --thread-accent-on: #FFFFFF;
+  --thread-focus: #4C3DD6;
+  --thread-success: #086C55;
+  --thread-success-bg: #EAF8F2;
+  --thread-warning: #965400;
+  --thread-warning-bg: #FFF4DD;
+  --thread-danger: #AA263C;
+  --thread-danger-bg: #FFF0F2;
+  --thread-info: #315B9E;
+  --thread-info-bg: #ECF3FF;
+  --thread-track: #D9DEEA;
+  --thread-baseline: #9AA5BB;
+  --thread-scenario: #5449D8;
+  --thread-projected: #B3772E;
+  --thread-muted-flow: #CBD3E2;
+  --thread-node-outline: #D7DDED;
+  --thread-overlay: #18223AB8;
+  color-scheme: light;
+}
+
+[data-thread-theme="dark"] {
+  --thread-canvas: #111628;
+  --thread-surface: #1B2237;
+  --thread-surface-muted: #222A40;
+  --thread-surface-elevated: #293147;
+  --thread-surface-accent: #302B58;
+  --thread-text-primary: #F3F5FF;
+  --thread-text-secondary: #BBC5DF;
+  --thread-text-tertiary: #AAB6D1;
+  --thread-border: #343E56;
+  --thread-border-strong: #536078;
+  --thread-accent: #ABA5FF;
+  --thread-accent-hover: #C5C0FF;
+  --thread-accent-pressed: #8E83F6;
+  --thread-accent-on: #111628;
+  --thread-focus: #C4BEFF;
+  --thread-success: #80D9B8;
+  --thread-success-bg: #173D35;
+  --thread-warning: #F3CD7B;
+  --thread-warning-bg: #493616;
+  --thread-danger: #FF9DA8;
+  --thread-danger-bg: #4C2531;
+  --thread-info: #9DC0FF;
+  --thread-info-bg: #223752;
+  --thread-track: #4D5970;
+  --thread-baseline: #95A3BF;
+  --thread-scenario: #ABA5FF;
+  --thread-projected: #F0C175;
+  --thread-muted-flow: #556078;
+  --thread-node-outline: #515C76;
+  --thread-overlay: #0A0E1AD6;
+  color-scheme: dark;
+}
+
+/* Shared dimensions */
+:root { --thread-size-header: 64px; }
+:root { --thread-size-nav-rail: 76px; }
+:root { --thread-size-explorer: 280px; }
+:root { --thread-size-inspector: 306px; }
+:root { --thread-size-column-gap: 12px; }
+:root { --thread-size-desktop-base: 1600px; }
+:root { --thread-size-desktop-min: 1280px; }
+:root { --thread-radius-xs: 3px; }
+:root { --thread-radius-sm: 5px; }
+:root { --thread-radius-md: 8px; }
+:root { --thread-radius-lg: 10px; }
+:root { --thread-radius-xl: 16px; }
+:root { --thread-radius-full: 999px; }
+:root { --thread-motion-instant: 80ms; }
+:root { --thread-motion-micro: 140ms; }
+:root { --thread-motion-standard: 220ms; }
+:root { --thread-motion-panel: 280ms; }
+:root { --thread-motion-spatial: 380ms; }
+:root { --thread-motion-ease-standard: cubic-bezier(.2,0,0,1); }
+:root { --thread-motion-ease-enter: cubic-bezier(0,0,.2,1); }
+:root { --thread-motion-ease-exit: cubic-bezier(.4,0,1,1); }
+:root { --thread-space-0: 0px; }
+:root { --thread-space-1: 4px; }
+:root { --thread-space-2: 8px; }
+:root { --thread-space-3: 12px; }
+:root { --thread-space-4: 16px; }
+:root { --thread-space-5: 20px; }
+:root { --thread-space-6: 24px; }
+:root { --thread-space-8: 32px; }
+:root { --thread-space-10: 40px; }
+:root { --thread-space-12: 48px; }
+:root { --thread-space-16: 64px; }
+:root { --thread-space-20: 80px; }
+:root { --thread-space-24: 96px; }
+@media (prefers-reduced-motion: reduce) { :root { --thread-motion-micro: 0ms; --thread-motion-standard: 0ms; --thread-motion-panel: 0ms; --thread-motion-spatial: 0ms; } }
+
+
+

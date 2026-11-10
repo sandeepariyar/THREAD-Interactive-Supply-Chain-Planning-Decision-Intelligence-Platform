@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268 44" width="268" height="44"><title>THREAD brand lockup on dark</title><rect x="1" y="2" width="40" height="40" rx="9.5" fill="#5449D8"/><g transform="translate(1 2)"><path d="M8 12.5c6.2 0 8.3 5.3 11.8 8.7 3.5 3.4 6.6 3.9 12.7-4.7" fill="none" stroke="white" stroke-width="2.65" stroke-linecap="round"/><path d="M8 27.2c5.4 0 8.5-4.7 12.2-8.1" fill="none" stroke="white" stroke-width="2.65" stroke-linecap="round"/><circle cx="8" cy="12.5" r="2.65" fill="white"/><circle cx="8" cy="27.2" r="2.65" fill="white"/><circle cx="32.5" cy="16.5" r="2.65" fill="white"/></g><g transform="translate(63 3)" color="#FFFFFF"><g fill="none" stroke="currentColor" stroke-width="3.3" stroke-linecap="square" stroke-linejoin="miter">
+<path d="M3 6h18M12 6v26"/>
+<path d="M34 6v26m18-26v26M34 19h18"/>
+<path d="M67 32V6h11c13 0 13 14 0 14H67m11 0 12 12"/>
+<path d="M101 6v26m0-26h18m-18 13h16m-16 13h18"/>
+<path d="m131 32 11-26 11 26m-18-9h14"/>
+<path d="M166 6v26h10c19 0 19-26 0-26h-10Z"/>
+</g></g></svg>
