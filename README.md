@@ -4,9 +4,17 @@
 
 Independent design-engineering portfolio project by Sandeep Pariyar. **Not an official RELEX product.** All catalog, inventory, revenue and facility information is synthetic. The model is illustrative and not an operational forecasting system.
 
-## Open the interactive demo
+## Launch the interactive demo
 
-Download **[index.html](./index.html)** and open it in Chrome or Edge. It is a single-file, self-contained offline React demonstration.
+The deployment-ready, dependency-free interactive application is available in [index.html](./index.html). It renders locally without npm or external assets.
+
+**GitHub Pages:** Once enabled in the repository settings, the public demo URL will be:
+
+https://sandeepariyar.github.io/THREAD-Interactive-Supply-Chain-Planning-Decision-Intelligence-Platform/
+
+One-time setup: **Settings → Pages → Source: Deploy from a branch → Branch: main → Folder: /(root) → Save.**
+
+See [publishing instructions](./docs/PUBLISHING.md). You can also download [index.html](./index.html) to run the demo locally in Chrome or Edge.
 
 ## Work with the complete source
 
