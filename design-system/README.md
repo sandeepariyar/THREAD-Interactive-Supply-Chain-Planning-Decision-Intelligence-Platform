@@ -8,6 +8,12 @@ The reverse-engineered, implementation-ready visual system for **THREAD — Inte
 
 > **Status matters:** `extracted-current.json` documents values **actually used in the existing React prototype**. `thread.tokens.json`, vector logos, icon library and components propose a **refined v1 design language**; they are not yet wired into the live application. Dark mode is an explicitly *proposed* theme. Never claim implementation in React or Qt before integration/testing.
 
+## Start with the design decisions
+
+For a portfolio walk-through, start with the [**Design Engineering Case Study**](../docs/DESIGN_ENGINEERING_CASE_STUDY.md) and the [**interactive visual reference**](./index.html). Follow these into the [foundations](./guides/03_FOUNDATIONS.md), [typed React primitives](./components/ThreadPrimitives.tsx), [interaction rules](./guides/05_INTERACTIONS.md), [visualization specification](./guides/06_VISUALIZATION.md), [accessibility contract](./guides/07_ACCESSIBILITY.md) and [Qt/QML handoff](./guides/09_QML_HANDOFF.md).
+
+> The design system's source proposals and reference implementations should not be mistaken for production adoption in the main application.
+
 ## System directory
 
 | Location | What it contains |

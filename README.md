@@ -8,9 +8,19 @@ An interactive enterprise planning prototype connecting **products, retail deman
 
 [![Deploy THREAD demo to GitHub Pages](https://github.com/sandeepariyar/THREAD-Interactive-Supply-Chain-Planning-Decision-Intelligence-Platform/actions/workflows/pages.yml/badge.svg)](https://github.com/sandeepariyar/THREAD-Interactive-Supply-Chain-Planning-Decision-Intelligence-Platform/actions/workflows/pages.yml)
 
-[**Explore React source**](./app/) · [**Read case study**](./app/docs/CASE_STUDY.md) · [**Publishing details**](./docs/PUBLISHING.md)
+[**Explore React source**](./app/) · [**Read product case study**](./app/docs/CASE_STUDY.md) · [**Design engineering case study**](./docs/DESIGN_ENGINEERING_CASE_STUDY.md) · [**Publishing details**](./docs/PUBLISHING.md)
 
 > **Independent portfolio prototype.** All products, facilities, inventory, forecasts, and scenario results are fictional. THREAD is not affiliated with RELEX Solutions or any other supply-chain software provider. The simulation is illustrative, not an operational planning or optimization engine.
+
+## Design engineering showcase
+
+**THREAD demonstrates a reusable design language—not just a collection of dashboard screens.** Explore the decision workflows, original visual identity, 59-source-icon library, semantic design tokens, typed React component examples, accessibility and interaction contracts, and an explicit Qt/QML handoff.
+
+**[▶ Explore the interactive design system](https://sandeepariyar.github.io/THREAD-Interactive-Supply-Chain-Planning-Decision-Intelligence-Platform/design-system/)** · **[Read the design engineering case study](./docs/DESIGN_ENGINEERING_CASE_STUDY.md)** · [View component source](./design-system/components/ThreadPrimitives.tsx)
+
+![THREAD symbol](./design-system/assets/brand/thread-mark.svg)
+
+> The design-system v1 package is a documented next-version proposal. The running React planning app remains separate; proposed components, dark theme and native Qt version are not claimed as implemented.
 
 ## Explore the experience
 
