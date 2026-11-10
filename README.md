@@ -23,6 +23,14 @@ An interactive enterprise planning prototype connecting **products, retail deman
 
 Selection, scenario settings, and the planning timeline share state across the experience. Pending parameter edits are distinguished from the most recently calculated simulation.
 
+## Design system and Qt/QML handoff
+
+The independent [**THREAD Design System**](./design-system/) contains a live interactive component/brand reference, original vector logo assets, 59 custom SVG icons, semantic light/dark color tokens, typography and component guidance, and a Qt/QML token singleton.
+
+[**Explore the visual design system**](https://sandeepariyar.github.io/THREAD-Interactive-Supply-Chain-Planning-Decision-Intelligence-Platform/design-system/) · [**Browse design tokens**](./design-system/tokens/) · [**QML handoff**](./design-system/guides/09_QML_HANDOFF.md)
+
+*The design system is a documented next-version proposal. Its new components and proposed dark theme have not yet been integrated into the main THREAD prototype.*
+
 ## Design & engineering
 
 **Stack:** React · TypeScript · Vite · CSS · reusable UI components · deterministic synthetic data model.
