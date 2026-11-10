@@ -1,50 +1,57 @@
-# THREAD — From Shelf to Source
+# THREAD — Interactive Supply Chain Planning & Decision Intelligence
 
-**Interactive supply-chain planning UX prototype** · React · TypeScript · Vite
+**From Shelf to Source.**
 
-Independent design-engineering portfolio project by Sandeep Pariyar. **Not an official RELEX product.** All catalog, inventory, revenue and facility information is synthetic. The model is illustrative and not an operational forecasting system.
+An interactive enterprise planning prototype connecting **products, retail demand, warehouse inventory, manufacturing capacity, and distribution**. THREAD explores how planners can follow supply dependencies, test demand changes, and understand their projected consequences in one coherent workspace.
 
-## Launch the interactive demo
+[**Launch interactive demo**](https://sandeepariyar.github.io/THREAD-Interactive-Supply-Chain-Planning-Decision-Intelligence-Platform/) · [**Explore React source**](./app/) · [**Read case study**](./app/docs/CASE_STUDY.md)
 
-The deployment-ready, dependency-free interactive application is available in [index.html](./index.html). It renders locally without npm or external assets.
+> **Independent portfolio prototype.** All products, facilities, inventory, forecasts, and scenario results are fictional. THREAD is not affiliated with RELEX Solutions or any other supply-chain software provider. The simulation is illustrative, not an operational planning or optimization engine.
 
-**GitHub Pages:** Once enabled in the repository settings, the public demo URL will be:
+## Explore the experience
 
-https://sandeepariyar.github.io/THREAD-Interactive-Supply-Chain-Planning-Decision-Intelligence-Platform/
+| Workspace | What it demonstrates |
+| --- | --- |
+| **Product Explorer** | Search and examine a synthetic catalog of 1,284 SKUs with inventory and risk indicators. |
+| **Supply Network** | Follow a selected product across its retail, distribution, and manufacturing context. |
+| **Scenario Studio** | Change demand and capacity assumptions; run deterministic what-if simulations and compare outcomes with baseline conditions. |
+| **Portfolio Exposure** | Investigate which products may be at risk and review aggregate, illustrative impacts. |
 
-One-time setup: **Settings → Pages → Source: Deploy from a branch → Branch: main → Folder: /(root) → Save.**
+Selection, scenario settings, and the planning timeline share state across the experience. Pending parameter edits are distinguished from the most recently calculated simulation.
 
-See [publishing instructions](./docs/PUBLISHING.md). You can also download [index.html](./index.html) to run the demo locally in Chrome or Edge.
+## Design & engineering
 
-## Work with the complete source
+**Stack:** React · TypeScript · Vite · CSS · reusable UI components · deterministic synthetic data model.
 
-The complete React + TypeScript + Vite project is in **[app/](./app/)**.
+**Design focus:** Enterprise UX, product discovery, multi-level information architecture, explainable scenario planning, interaction design, and reusable component systems.
+
+- [Application & component source](./app/src/)
+- [Simulation data model](./app/src/model.ts)
+- [Design/UX review and improvements](./docs/UX_AUDIT.md)
+- [QML handoff notes](./app/docs/QML_HANDOFF.md)
+
+## Run locally
 
 ```bash
 cd app
 npm install
 npm run dev
+```
+
+Or open the self-contained [browser demo file](./index.html) locally without installing dependencies.
+
+For testing and a production build:
+
+```bash
+cd app
 npm test
 npm run build
 ```
 
-The project includes:
-- [Reusable UI components](./app/src/components.tsx) and [design tokens/styles](./app/src/styles.css)
-- [Product selection, network, scenario and portfolio screens](./app/src/App.tsx)
-- [Deterministic synthetic simulation](./app/src/model.ts)
-- [Case study](./app/docs/CASE_STUDY.md) and [QML migration handoff](./app/docs/QML_HANDOFF.md)
-- [Offline preview](./app/preview/index.html) and automated model/UI-tree checks
+## Project status
 
-## Current scope and UX opportunities
-
-Four connected workspaces: product discovery, supply lineage, scenario simulation and portfolio exposure. Scenario edits remain separate from the last simulated result; no live business state can be changed.
-
-See **[UX audit and next improvements](./docs/UX_AUDIT.md)** for known problems and design priorities.
-
-## About the data
-
-1,284 products and all warehouses, factories, scenario effects and revenue estimates are fictional. Forecasting logic is a small, deterministic educational model, not a RELEX or third-party business algorithm. This repository is unaffiliated with RELEX Solutions.
+This is an **interactive prototype**, not production supply-chain software. Product-dependent network accuracy, shared-capacity modeling, and deeper accessibility and responsive behavior are documented as areas for improvement in the [UX audit](./docs/UX_AUDIT.md).
 
 ## Credits
 
-Concept and implementation by Sandeep Pariyar, using independent ideas developed through Google Stitch visual exploration. Third-party React/ReactDOM license notices are retained in the offline preview and [notices](./THIRD_PARTY_NOTICES.md).
+Independent concept and development by **Sandeep Pariyar**. Visual exploration used Google Stitch. Third-party notices are included in [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md). Publishing configuration is documented separately in [docs/PUBLISHING.md](./docs/PUBLISHING.md).
