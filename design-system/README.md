@@ -4,7 +4,7 @@
 
 The reverse-engineered, implementation-ready visual system for **THREAD — Interactive Supply Chain Planning & Decision Intelligence**. It encompasses branding, vector assets, semantic design tokens, component contracts, interaction and visualization patterns, accessibility, and a Qt/QML handoff.
 
-[**Open the interactive design-system reference**](./index.html) · [**THREAD application**](../index.html) · [**QML handoff**](./guides/QML_HANDOFF.md)
+[**Open the interactive design-system reference**](./index.html) · [**THREAD application**](../index.html) · [**QML handoff**](./guides/09_QML_HANDOFF.md)
 
 > **Status matters:** `extracted-current.json` documents values **actually used in the existing React prototype**. `thread.tokens.json`, vector logos, icon library and components propose a **refined v1 design language**; they are not yet wired into the live application. Dark mode is an explicitly *proposed* theme. Never claim implementation in React or Qt before integration/testing.
 
@@ -13,11 +13,11 @@ The reverse-engineered, implementation-ready visual system for **THREAD — Inte
 | Location | What it contains |
 | --- | --- |
 | `index.html` | Interactive visual design-system reference, no build step |
-| `assets/brand/` | Original THREAD mark, mono mark, wordmark, light/dark lockups and favicon (SVG) |
+| `assets/brand/` | Original THREAD mark, mono mark, vector wordmarks and light/dark lockups (SVG) |
 | `assets/icons/` | 59 original, 24×24, consistent-stroke SVG icons, plus manifest and sprite |
 | `tokens/` | Existing CSS extraction, proposed JSON tokens, CSS custom properties and TypeScript mapping |
 | `components/` | Reusable typed React primitive examples and CSS implementations |
-| `guides/` | Professional foundation, brand, component, content, data visualization, UX and accessibility rules |
+| `guides/` | Source audit, brand/icon rules, component contracts, accessibility and QML handoff (additional detailed guides in the complete ZIP) |
 | `qml/` | Theme singleton + `qmldir` foundation for the future Qt 6 port |
 | `tests/` | Automated validation for SVG syntax, token alignment and accessible color pairings |
 
