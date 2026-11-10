@@ -1,0 +1,36 @@
+{
+  "description": "Source-extracted values, not the recommended future palette. CSS from THREAD app/src/styles.css.",
+  "cssVariables": {
+    "--bg": "#f5f6fb",
+    "--sheet": "#fff",
+    "--ink": "#18223a",
+    "--muted": "#798397",
+    "--muted-2": "#96a1b3",
+    "--stroke": "#e6e8f0",
+    "--stroke-dark": "#d5dbe8",
+    "--iris": "#5449d8",
+    "--iris-dark": "#342baa",
+    "--iris-lite": "#edecff",
+    "--iris-pale": "#f7f6ff",
+    "--green": "#128c70",
+    "--green-bg": "#ebf8f1",
+    "--amber": "#b66b1f",
+    "--amber-bg": "#fff5e4",
+    "--red": "#bf4a55",
+    "--red-bg": "#ffedf0",
+    "--shadow": "0 7px 28px rgba(35,48,87,.035)"
+  },
+  "currentTypography": [
+    "DM Sans",
+    "IBM Plex Mono"
+  ],
+  "currentLayout": {
+    "globalHeader": "64px",
+    "navRail": "76px",
+    "explorer": "280px",
+    "inspector": "306px",
+    "gap": "12px",
+    "pageMaxWidth": "1900px"
+  },
+  "foundationsWarning": "Current UI still contains 9px–11px text; proposed v1 tokens raise the core reading sizes."
+}

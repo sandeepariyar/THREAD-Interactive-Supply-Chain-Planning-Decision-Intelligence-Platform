@@ -1,0 +1,52 @@
+/* Design-system primitives — proposed v1; import tokens/thread.css first. */
+.thread-button,.thread-badge,.thread-field,.thread-panel,.thread-product-row,.thread-tabs,.thread-metric{box-sizing:border-box;font-family:'DM Sans','Segoe UI',Arial,sans-serif}
+.thread-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:36px;padding:7px 14px;border:1px solid transparent;border-radius:var(--thread-radius-sm);font-size:13px;line-height:20px;font-weight:700;cursor:pointer;transition:background var(--thread-motion-micro),border-color var(--thread-motion-micro),transform var(--thread-motion-micro)}
+.thread-button:focus-visible,.thread-tabs button:focus-visible,.thread-product-row:focus-visible,.thread-field input:focus-visible{outline:2px solid var(--thread-focus);outline-offset:2px}
+.thread-button:active:not(:disabled){transform:translateY(1px)}
+.thread-button:disabled{opacity:.5;cursor:not-allowed}
+.thread-button--primary{background:var(--thread-accent);color:var(--thread-accent-on)}
+.thread-button--primary:hover:not(:disabled){background:var(--thread-accent-hover)}
+.thread-button--secondary{background:var(--thread-surface);color:var(--thread-text-primary);border-color:var(--thread-border-strong)}
+.thread-button--secondary:hover:not(:disabled){background:var(--thread-surface-muted)}
+.thread-button--quiet{background:transparent;color:var(--thread-text-secondary)}
+.thread-button--quiet:hover:not(:disabled){background:var(--thread-surface-accent);color:var(--thread-accent)}
+.thread-button--danger{background:var(--thread-danger-bg);color:var(--thread-danger);border-color:var(--thread-danger)}
+.thread-button--compact{min-height:32px;padding:5px 10px;font-size:12px}
+.thread-button--large{min-height:40px;padding:9px 18px;font-size:14px}
+.thread-button__icon{display:grid;place-items:center}
+.thread-badge{display:inline-flex;align-items:center;gap:6px;min-height:22px;padding:4px 8px;border:1px solid transparent;border-radius:var(--thread-radius-sm);font-size:11px;line-height:16px;font-weight:700}
+.thread-badge__dot{height:6px;width:6px;border-radius:50%;background:currentColor}
+.thread-badge--healthy{background:var(--thread-success-bg);color:var(--thread-success)}
+.thread-badge--watch{background:var(--thread-warning-bg);color:var(--thread-warning)}
+.thread-badge--at-risk{background:var(--thread-danger-bg);color:var(--thread-danger)}
+.thread-badge--info{background:var(--thread-info-bg);color:var(--thread-info)}
+.thread-badge--unavailable{background:var(--thread-surface-muted);color:var(--thread-text-secondary);border-color:var(--thread-border)}
+.thread-field{display:flex;flex-direction:column;gap:5px;min-width:180px}
+.thread-field>label{font-size:12px;line-height:18px;font-weight:700;color:var(--thread-text-secondary)}
+.thread-field input{height:36px;width:100%;padding:8px 10px;border:1px solid var(--thread-border-strong);border-radius:var(--thread-radius-sm);background:var(--thread-surface);color:var(--thread-text-primary);font-size:14px}
+.thread-field input[aria-invalid="true"]{border-color:var(--thread-danger)}
+.thread-field__hint,.thread-field__error{margin:0;font-size:11px;line-height:16px;color:var(--thread-text-secondary)}
+.thread-field__error{color:var(--thread-danger)}
+.thread-panel{overflow:hidden;border:1px solid var(--thread-border);border-radius:var(--thread-radius-md);background:var(--thread-surface);box-shadow:0 7px 28px rgba(35,48,87,.035)}
+.thread-panel__heading{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 18px 12px;border-bottom:1px solid var(--thread-border)}
+.thread-panel__heading h2{margin:2px 0 0;color:var(--thread-text-primary);font-size:16px;line-height:22px}
+.thread-panel__kicker{font:600 11px/16px 'IBM Plex Mono',monospace;letter-spacing:.5px;text-transform:uppercase;color:var(--thread-text-secondary)}
+.thread-panel__content{padding:16px 18px;color:var(--thread-text-primary)}
+.thread-metric{display:flex;flex-direction:column;gap:3px}
+.thread-metric__label{font-size:11px;line-height:16px;font-weight:600;color:var(--thread-text-secondary)}
+.thread-metric__value{font:600 26px/32px 'IBM Plex Mono',Consolas,monospace;font-variant-numeric:tabular-nums;color:var(--thread-text-primary)}
+.thread-metric__value small{font-size:12px}
+.thread-metric__value--good{color:var(--thread-success)}
+.thread-metric__value--bad{color:var(--thread-danger)}
+.thread-metric__detail{font-size:11px;color:var(--thread-text-secondary)}
+.thread-product-row{display:flex;align-items:center;gap:10px;min-height:72px;width:100%;padding:10px;text-align:left;border:0;border-left:3px solid transparent;border-bottom:1px solid var(--thread-border);background:var(--thread-surface);color:var(--thread-text-primary);cursor:pointer}
+.thread-product-row:hover{background:var(--thread-surface-muted)}
+.thread-product-row.is-selected{background:var(--thread-surface-accent);border-left-color:var(--thread-accent)}
+.thread-product-row__avatar{display:grid;place-items:center;flex:none;width:42px;height:42px;background:var(--thread-surface-muted);border:1px solid var(--thread-border);border-radius:5px}
+.thread-product-row__copy{display:flex;flex-direction:column;gap:2px;flex:1;min-width:0}
+.thread-product-row__copy strong{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:13px;line-height:18px}
+.thread-product-row__copy span{color:var(--thread-text-secondary);font:500 11px/15px 'IBM Plex Mono',monospace}
+.thread-tabs{display:flex;gap:2px;overflow-x:auto;border-bottom:1px solid var(--thread-border)}
+.thread-tabs button{border:0;border-bottom:2px solid transparent;background:transparent;padding:9px 12px;color:var(--thread-text-secondary);font-weight:700;cursor:pointer;white-space:nowrap}
+.thread-tabs button[aria-selected="true"]{color:var(--thread-accent);border-bottom-color:var(--thread-accent)}
+@media(prefers-reduced-motion:reduce){.thread-button{transition:none;transform:none}}

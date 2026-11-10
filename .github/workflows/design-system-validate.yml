@@ -1,0 +1,35 @@
+name: Validate THREAD design system
+
+on:
+  pull_request:
+    paths:
+      - "design-system/**"
+      - "docs/DESIGN_ENGINEERING_CASE_STUDY.md"
+      - "README.md"
+      - ".github/workflows/design-system-validate.yml"
+  push:
+    branches: [main]
+    paths:
+      - "design-system/**"
+      - "docs/DESIGN_ENGINEERING_CASE_STUDY.md"
+      - "README.md"
+      - ".github/workflows/design-system-validate.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Design tokens, SVGs, and model/UI checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate design system source
+        run: python3 design-system/tests/validate_design_system.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Run existing model and UI source checks
+        working-directory: app
+        run: npm test

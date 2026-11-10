@@ -1,0 +1,86 @@
+/** Typed reference for proposed THREAD v1 tokens; not yet adopted by the production app. */
+export const thread = {
+  "name": "THREAD",
+  "version": "1.0.0",
+  "status": "proposed evolution",
+  "source": "app/src/styles.css",
+  "semantic": {
+    "light": {
+      "canvas": "#F5F6FB",
+      "surface": "#FFFFFF",
+      "surface-muted": "#F7F8FC",
+      "surface-accent": "#F0EFFF",
+      "text-primary": "#18223A",
+      "text-secondary": "#596681",
+      "text-tertiary": "#616E88",
+      "border": "#E1E5F0",
+      "border-strong": "#C8D0DE",
+      "accent": "#5449D8",
+      "accent-hover": "#4035C0",
+      "accent-pressed": "#3026A1",
+      "accent-on": "#FFFFFF",
+      "success": "#086C55",
+      "success-bg": "#EAF8F2",
+      "warning": "#965400",
+      "warning-bg": "#FFF4DD",
+      "danger": "#AA263C",
+      "danger-bg": "#FFF0F2",
+      "info": "#315B9E",
+      "info-bg": "#ECF3FF"
+    },
+    "dark": {
+      "canvas": "#111628",
+      "surface": "#1B2237",
+      "surface-muted": "#222A40",
+      "surface-accent": "#302B58",
+      "text-primary": "#F3F5FF",
+      "text-secondary": "#BBC5DF",
+      "text-tertiary": "#AAB6D1",
+      "border": "#343E56",
+      "border-strong": "#536078",
+      "accent": "#ABA5FF",
+      "accent-hover": "#C5C0FF",
+      "accent-pressed": "#8E83F6",
+      "accent-on": "#111628",
+      "success": "#80D9B8",
+      "success-bg": "#173D35",
+      "warning": "#F3CD7B",
+      "warning-bg": "#493616",
+      "danger": "#FF9DA8",
+      "danger-bg": "#4C2531",
+      "info": "#9DC0FF",
+      "info-bg": "#223752"
+    }
+  },
+  "fonts": {
+    "ui": "DM Sans, Segoe UI, Arial, sans-serif",
+    "data": "IBM Plex Mono, Consolas, monospace"
+  },
+  "layout": {
+    "header": 64,
+    "nav": 76,
+    "explorer": 280,
+    "inspector": 306,
+    "gap": 12
+  },
+  "type": {
+    "body": 14,
+    "label": 12,
+    "caption": 11,
+    "title": 20,
+    "display": 30
+  },
+  "icon": {
+    "size": 24,
+    "stroke": 1.7
+  },
+  "motion": {
+    "micro": 140,
+    "standard": 220,
+    "panel": 280,
+    "spatial": 380
+  }
+} as const;
+export type ThreadTheme = keyof typeof thread.semantic;
+export type ThreadSemanticRole = keyof typeof thread.semantic.light;
+export const semanticColor = (theme: ThreadTheme, role: ThreadSemanticRole): string => thread.semantic[theme][role];
