@@ -1,22 +1,22 @@
-# Publish THREAD as a GitHub Pages live demo
+# THREAD — Live demo publishing
 
-The root [index.html](../index.html) is a self-contained, offline-capable static React prototype. No npm build step is needed to host it. A root `.nojekyll` file is included to disable unnecessary Jekyll processing.
+**Live demo:** https://sandeepariyar.github.io/THREAD-Interactive-Supply-Chain-Planning-Decision-Intelligence-Platform/
 
-## One-time GitHub setting (repository administrator)
+**Deployment status:** [GitHub Actions — Deploy THREAD demo to GitHub Pages](https://github.com/sandeepariyar/THREAD-Interactive-Supply-Chain-Planning-Decision-Intelligence-Platform/actions/workflows/pages.yml).
 
-1. Open https://github.com/sandeepariyar/THREAD-Interactive-Supply-Chain-Planning-Decision-Intelligence-Platform/settings/pages
-2. Under **Build and deployment**, choose **Deploy from a branch**.
-3. Choose branch **main** and folder **/(root)**; click **Save**.
-4. On the Pages settings page, check the deployment status and follow the published site link.
+The static site is deployed from `index.html` using the committed workflow `.github/workflows/pages.yml`. GitHub Actions automatically packages the self-contained site and deploys it on pushes to `main` that change the website or deployment workflow. Deployment can also be triggered manually from the Actions tab.
 
-Expected URL when GitHub Pages is active:
+## What is served
 
-https://sandeepariyar.github.io/THREAD-Interactive-Supply-Chain-Planning-Decision-Intelligence-Platform/
+- [`index.html`](../index.html) is the entire standalone interactive browser demo. No external bundles or npm installation are needed.
+- [`app/`](../app/) contains the reusable React + TypeScript + Vite source and tests.
+- All planning data, facilities and scenario results are synthetic.
 
-Any changes to `index.html` on `main` will then deploy through GitHub Pages.
+## Troubleshooting a blank page or missing update
 
-## Source versus hosted preview
+1. Review the [deployment workflow runs](https://github.com/sandeepariyar/THREAD-Interactive-Supply-Chain-Planning-Decision-Intelligence-Platform/actions/workflows/pages.yml); the latest run must show **Success**.
+2. Visit the live URL above directly, not the GitHub `index.html` code preview.
+3. Try a hard refresh (Ctrl+F5) or a private browsing window if the previous 404/blank page is cached.
+4. If the workflow fails because Pages is disabled or its publishing source is wrong, open [Settings → Pages](https://github.com/sandeepariyar/THREAD-Interactive-Supply-Chain-Planning-Decision-Intelligence-Platform/settings/pages) and choose **GitHub Actions** under Source.
 
-- `index.html`: standalone browser demo served by Pages
-- `app/`: React + TypeScript + Vite source; can be developed with `npm install && npm run dev`
-- This is an independent portfolio prototype using entirely synthetic planning data.
+This is a public, independent design-engineering prototype, not an operational supply-chain system.
