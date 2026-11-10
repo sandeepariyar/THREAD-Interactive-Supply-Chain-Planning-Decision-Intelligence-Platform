@@ -4,7 +4,11 @@
 
 An interactive enterprise planning prototype connecting **products, retail demand, warehouse inventory, manufacturing capacity, and distribution**. THREAD explores how planners can follow supply dependencies, test demand changes, and understand their projected consequences in one coherent workspace.
 
-[**Launch interactive demo**](https://sandeepariyar.github.io/THREAD-Interactive-Supply-Chain-Planning-Decision-Intelligence-Platform/) · [**Explore React source**](./app/) · [**Read case study**](./app/docs/CASE_STUDY.md)
+### [▶ Launch the live interactive demo](https://sandeepariyar.github.io/THREAD-Interactive-Supply-Chain-Planning-Decision-Intelligence-Platform/)
+
+[![Deploy THREAD demo to GitHub Pages](https://github.com/sandeepariyar/THREAD-Interactive-Supply-Chain-Planning-Decision-Intelligence-Platform/actions/workflows/pages.yml/badge.svg)](https://github.com/sandeepariyar/THREAD-Interactive-Supply-Chain-Planning-Decision-Intelligence-Platform/actions/workflows/pages.yml)
+
+[**Explore React source**](./app/) · [**Read case study**](./app/docs/CASE_STUDY.md) · [**Publishing details**](./docs/PUBLISHING.md)
 
 > **Independent portfolio prototype.** All products, facilities, inventory, forecasts, and scenario results are fictional. THREAD is not affiliated with RELEX Solutions or any other supply-chain software provider. The simulation is illustrative, not an operational planning or optimization engine.
 
